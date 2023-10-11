@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+	<body onload="myFunction()">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+		<style>
+			.container { 
+				height: 200px;
+				position: relative;
+				border: 3px solid green; 
+			}
+
+			.center {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		</style>
+    </head>
+
+    <body>
+
+<!--        <h2>Download MIPS Editor</h2> -->
+<!--			<h3> Using the <i> download attribute of <a> tag </i> to create file download button using JavaScript. </h3> ..>
+<!--			<p> Click the below button to download the image file </p>  -->
+       
+        <div class="container">
+            <div class="center">
+<!--                <button id="rme" onclick="downloadURL('https://elearning.ua.pt/draftfile.php/144009/user/draft/702170687/MipsEditorV1_0.exe');">Download MIPS Editor!</button> -->
+<!--                <button id="execute" onclick="runit();return false;">Run Program</button> -->
+                <p id="demo"></p>
+				<a href = "https://elearning.ua.pt/draftfile.php/144009/user/draft/702170687/MipsEditorV1_0.exe" Download >
+				<button id="rme" type = "button"> Download MipsEditorV1_0 
+				</button>
+				</a>
+
+                <script  type="text/javascript" language="javascript">
+                    const bt1 = document.getElementById("rme");
+                // function to disable the button
+                    const disableButton = () => {
+                        bt1.disabled = true;
+                    };
+                    // calling the disableButton() function when the click event happens
+                    bt1.addEventListener("click", disableButton);
+
+					function myFunction() {
+					  document.getElementById("rme").click();
+					}									
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
